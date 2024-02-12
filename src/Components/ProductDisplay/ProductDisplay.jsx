@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import Rating from "../rating/Rating";
+import Rating from "../Rating/Rating";
 import { ShopContext } from "../Context/ShopContext";
 import DescriptionBox from "../DescriptionBox/DescriptionBox";
 
