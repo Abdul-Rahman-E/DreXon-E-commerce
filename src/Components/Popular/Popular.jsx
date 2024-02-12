@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import "../../index.css";
 import data_product from "../Assets/data";
 import Item from "../Item/Item";
 

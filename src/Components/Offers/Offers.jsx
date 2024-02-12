@@ -1,5 +1,4 @@
 import React from "react";
-import "../../index.css";
 import exclusive_image from "../Assets/exclusive_image.png";
 
 const Offers = () => {

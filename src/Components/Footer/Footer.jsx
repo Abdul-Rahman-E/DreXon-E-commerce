@@ -1,5 +1,4 @@
 import React from "react";
-import "../../index.css";
 import insta from "../Assets/instagram_icon.png";
 import pinint from "../Assets/pintester_icon.png";
 import whatsapp from "../Assets/whatsapp_icon.png";
