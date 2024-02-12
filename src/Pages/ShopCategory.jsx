@@ -32,39 +32,16 @@ const ShopCategory = (props) => {
         <p className="text-xs md:text-sm">
           <span className="font-semibold">Showing 1-12</span> out of 36 products
         </p>
-        <select className="text-xs md:text-sm font-medium px-2 rounded-md shadow-sm shadow-slate-600">
-          <option
-            onClick={() => {
-              setCurrentSort("name");
-            }}
-            value="Name"
-          >
-            Name
-          </option>
-          <option
-            onClick={() => {
-              setCurrentSort("lth");
-            }}
-            value="lth"
-          >
-            Price: Low to High
-          </option>
-          <option
-            onClick={() => {
-              setCurrentSort("htl");
-            }}
-            value="htl"
-          >
-            Price: High to Low
-          </option>
-          <option
-            onClick={() => {
-              setCurrentSort("avg");
-            }}
-            value="avg"
-          >
-            Customer Review
-          </option>
+        <select
+          onChange={(e) => {
+            setCurrentSort(e.target.value);
+          }}
+          className="text-xs md:text-sm font-medium px-2 rounded-md shadow-sm shadow-slate-600"
+        >
+          <option value="name">Name</option>
+          <option value="lth">Price: Low to High</option>
+          <option value="htl">Price: High to Low</option>
+          <option value="avg">Customer Review</option>
         </select>
       </div>
       <div className="md:w-[1140px] grid grid-cols-2 md:grid-cols-4 gap-y-6 md:gap-y-16 md:gap-10 mb-20 py-4">
